@@ -77,7 +77,8 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Matisse Clicky Game {this.state.score} {this.state.highScore}</Title>
+        <Title>Matisse Clicky Game</Title> 
+        <Title> Current Score: {this.state.score} High Score: {this.state.highScore}</Title>
         {this.state.images.map(image => (
           <ImageCard
             handleClick={this.handleClick}
